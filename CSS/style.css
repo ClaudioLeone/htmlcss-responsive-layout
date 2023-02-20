@@ -65,19 +65,20 @@ img{
     width: calc((calc(100% / 3 * 2) - 10px));
 
     /* debug */
-    height: 300px;
+    height: 150px;
 }
 
 .col-small{
     width: calc(100% / 3 - 20px);
 
     /* debug */
-    height: 300px;
+    height: 150px;
 }
 
 .largebox{
     width: 100%;
     background-color: lightblue;
+    border-radius: 1rem;
     
     /* debug */
     height: 100%;
@@ -86,24 +87,44 @@ img{
 .smallbox{
     width: 100%;
     background-color: lightcoral;
+    border-radius: 1rem;
     
     /* debug */
     height: 100%;
 }
 
 /* MEDIA QUERIES */
-@media all and (min-width: 320px){
 
-}
+@media all and (max-width: 768px){
+    .row-first{
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media all and (min-width: 768px){
+    .row-second{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .col-small{
+        width: 100%;
+    }
+
+    .col-big{
+        width: 100%;
+
+        /* debug */
+        height: 300px;
+    }
 }
 
 @media all and (min-width: 992px){
-    
+    .container{
+        width: 60%;
+        max-width: 60%;
+    }
 }
 
-@media all and (min-width: 1200px){
+@media all and (max-width: 1200px){
     
 }
