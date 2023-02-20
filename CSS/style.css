@@ -5,8 +5,105 @@
     box-sizing: border-box;
 }
 
-/* GENERAL */
+/* DEBUG */
 
+
+
+/* UTILITIES */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.spacebtw{
+    justify-content: space-between;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+/* GENERAL */
+img{
+    width: 100%;
+}
+
+
+/* IDs */
+#navbar{
+    display: flex;
+    height: 3rem;
+    background-color: dodgerblue;
+    justify-content: space-between;
+}
 
 /* CLASSES */
+.logo{
+    width: 20%;
 
+    /* debug */
+    height: 100%;
+    
+    background-color: beige;
+}
+
+.hamburger-menu{
+    width: 10%;
+
+    /* debug */
+    height: 100%;
+
+    background-color: cadetblue;
+}
+
+
+.col-big{
+    width: calc((calc(100% / 3 * 2) - 10px));
+
+    /* debug */
+    height: 300px;
+}
+
+.col-small{
+    width: calc(100% / 3 - 20px);
+
+    /* debug */
+    height: 300px;
+}
+
+.largebox{
+    width: 100%;
+    background-color: lightblue;
+    
+    /* debug */
+    height: 100%;
+}
+
+.smallbox{
+    width: 100%;
+    background-color: lightcoral;
+    
+    /* debug */
+    height: 100%;
+}
+
+/* MEDIA QUERIES */
+@media all and (min-width: 320px){
+
+}
+
+@media all and (min-width: 768px){
+
+}
+
+@media all and (min-width: 992px){
+    
+}
+
+@media all and (min-width: 1200px){
+    
+}
