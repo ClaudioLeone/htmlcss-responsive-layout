@@ -143,6 +143,27 @@ img{
     background-color: lawngreen;
 }
 
+.partners-sect{
+    text-align: center;
+}
+
+.testimonials{
+    background-color: rebeccapurple;
+}
+
+.testimonial-img{
+    width: 100px;
+    border-radius: 100%;
+
+    /* debug */
+    height: 100px;
+    background-color: white;
+}
+
+.test-text{
+    width: 70%;
+}
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 768px){
