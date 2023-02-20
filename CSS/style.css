@@ -31,6 +31,14 @@
     background-color: rebeccapurple;
 }
 
+.buttons{
+    text-decoration: none;
+    color: white;
+    background-color: rebeccapurple;
+    padding: 5px;
+    border-radius: 15px;
+}
+
 /* GENERAL */
 img{
     width: 100%;
@@ -164,7 +172,30 @@ img{
     width: 70%;
 }
 
+.benefits-sect{
+    text-align: center;
+}
+
+.cards-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards{
+    width: calc(100% / 3 - 10px);
+    background-color: white;
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
 /* MEDIA QUERIES */
+
+@media all and (max-width: 320px){
+    .cards{
+        width: 100%;
+    }
+}
 
 @media all and (max-width: 768px){
     .row-first{
@@ -187,12 +218,20 @@ img{
         /* debug */
         height: 300px;
     }
+
+    .cards{
+        width: calc(100% / 2 - 10px);
+    }
 }
 
 @media all and (min-width: 992px){
     .container{
         width: 60%;
         max-width: 60%;
+    }
+
+    .cards{
+        width: calc(100% / 3 - 10px);
     }
 }
 
