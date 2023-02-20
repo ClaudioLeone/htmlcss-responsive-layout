@@ -202,11 +202,24 @@ img{
     align-items: center;
 }
 
-
+.aboutus-img{
 /* debug */
     width: 100px;
     height: 100px;
     background-color: blue;
+}
+
+.free-sect{
+    color: white;
+    text-align: center;
+}
+
+.start-btn{
+    background-color: white;
+    color: rebeccapurple;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 /* MEDIA QUERIES */
