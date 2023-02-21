@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* DEBUG */
@@ -47,31 +48,59 @@ img{
 
 /* IDs */
 #navbar{
-    display: flex;
-    height: 3rem;
     background-color: dodgerblue;
-    justify-content: space-between;
+    padding: 20px 0;
 }
 
 /* CLASSES */
 .logo{
-    width: 20%;
-
-    /* debug */
-    height: 100%;
-    
-    background-color: beige;
+    width: 30%;
+    justify-content: left;
+    align-items: center;
 }
+
 
 .hamburger-menu{
-    width: 10%;
-
-    /* debug */
-    height: 100%;
-
-    background-color: cadetblue;
+    width: 60%;
+    justify-content: right;
+    align-items: center;
+    color: white;
 }
 
+.hamburger-menu > i{
+    font-size: 1.3rem;
+}
+
+.expanded-hamb-menu{
+    align-items: center;
+}
+
+.hamb-list{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 0.7rem;
+}
+
+.hamb-list > li{
+    margin: 0 10px;
+    padding: 5px 5px;
+}
+
+.hamb-list > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamb-list > li:last-child{
+    margin-right: 0;
+    background-color: white;
+    border-radius: 20px;
+}
+
+li > a:last-child{
+    color: black;
+}
 
 .col-big{
     width: calc((calc(100% / 3 * 2) - 10px));
@@ -222,10 +251,17 @@ img{
     text-decoration: none;
 }
 
+.bottom-ul{
+    gap: 20px;
+}
+
+.bottom-ul > li{
+    text-decoration: none;
+}
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 320px){
-
     .cards{
         width: 100%;
     }
@@ -233,6 +269,13 @@ img{
     .aboutus-sect{
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media all and (min-width: 320px){
+    .logo > img{
+        width: 70px;
+        height: 35px;
     }
 }
 
@@ -263,6 +306,17 @@ img{
     }
 }
 
+@media all and (min-width: 768px){
+    .hamburger-menu > i{
+        font-size: 1.5rem;
+    }
+
+    .logo > img{
+        width: 104px;
+        height: 52px;
+    }
+}
+
 @media all and (min-width: 992px){
     .container{
         width: 60%;
@@ -271,6 +325,10 @@ img{
 
     .cards{
         width: calc(100% / 3 - 10px);
+    }
+
+    .hamburger-menu{
+        display: none;
     }
 }
 
@@ -285,6 +343,10 @@ img{
 
     .col-right{
         width: 100%;
+    }
+
+    .hamb-list{
+        display: none;
     }
 }
 
