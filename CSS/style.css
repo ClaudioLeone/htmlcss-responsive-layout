@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
 }
 
 /* DEBUG */
@@ -11,6 +10,9 @@
 
 
 /* UTILITIES */
+.body{
+    font-family: sans-serif;
+}
 .container{
     width: 90%;
     margin: 0 auto;
@@ -38,6 +40,10 @@
     background-color: rebeccapurple;
     padding: 5px;
     border-radius: 15px;
+}
+
+.margin-top{
+    margin-top: 20px;
 }
 
 /* GENERAL */
@@ -104,9 +110,10 @@ li > a:last-child{
 
 .col-big{
     width: calc((calc(100% / 3 * 2) - 10px));
-
-    /* debug */
-    height: 150px;
+    height: 100%;
+    flex-direction: column;
+    background-color: #bacbf4;
+    border-radius: 1rem;
 }
 
 .col-small{
@@ -118,11 +125,35 @@ li > a:last-child{
 
 .largebox{
     width: 100%;
-    background-color: lightblue;
-    border-radius: 1rem;
-    
+    flex-direction: column;
+    align-items: center;
     /* debug */
     height: 100%;
+}
+
+.largebox h3{
+    color: dodgerblue;
+    text-align: center;
+}
+
+.largebox-text{
+    width: 80%;
+    font-size: 0.9rem;
+}
+
+.blue-btn{
+    background-color: dodgerblue;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 50px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.blue-btn a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .smallbox{
@@ -296,9 +327,7 @@ li > a:last-child{
 
     .col-big{
         width: 100%;
-
-        /* debug */
-        height: 300px;
+        height: 100%;
     }
 
     .cards{
